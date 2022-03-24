@@ -20,8 +20,7 @@ import lombok.NoArgsConstructor;
 @Data
 @EntityListeners(AuditingEntityListener.class)
 @Entity
-public class boardTbl {
-
+public class BoardTbl {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -30,5 +29,4 @@ public class boardTbl {
 
     @CreatedDate
     private LocalDateTime createDate;
-
 }
